@@ -8,7 +8,13 @@ Use ES6 whenever possible.
 
 "use strict";
 
-// Write code here
+function sum(){
+	var total = 0
+	for (var i = arguments.length - 1; i >= 0; i--) {
+		total = total + arguments[i]
+	}
+	console.log(total)
+}
 
 sum(1, 3);
 //4
@@ -17,4 +23,3 @@ sum(10, 20, 5);
 //35
 
 sum(2, 5, 80, 1, 10, 12);
-//110
